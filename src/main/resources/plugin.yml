@@ -1,0 +1,22 @@
+name: Zbossbar
+version: '1.0'
+main: org.zoobastiks.zbossbar.Zbossbar
+api-version: '1.21'
+authors: [Zoobastik]
+description: Плагин для настраиваемых боссбаров в каждом мире
+commands:
+  bossbar:
+    description: Включить или отключить отображение боссбара для себя
+    usage: /bossbar
+    permission: zbossbar.toggle
+  zbossbar:
+    description: Управление плагином Zbossbar
+    usage: /zbossbar [reload]
+    permission: zbossbar.admin
+permissions:
+  zbossbar.toggle:
+    description: Позволяет включать/отключать боссбар для себя
+    default: true
+  zbossbar.admin:
+    description: Доступ к администраторским командам плагина
+    default: op 
